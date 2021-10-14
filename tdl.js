@@ -3,6 +3,7 @@ function subFunction() {
   var field = document.getElementById("main-input");
 
   if (field.value == "") {
+    M.toast({ html: "Please type something !" });
     return;
   } else {
     arr.push(field.value);
@@ -38,10 +39,7 @@ function subFunction() {
         var current = parseInt(node.parentElement.id);
         arr.splice(current, 1);
         deleAlert.style.display = "none";
-        comalert.style.display = "block";
-        setTimeout(function () {
-          comalert.style.display = "none";
-        }, 3000);
+        M.toast({ html: "the plan was removed !" });
       };
     }
     document.getElementById("item" + i).appendChild(node);

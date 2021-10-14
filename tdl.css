@@ -19,7 +19,6 @@
 
 .btn {
   font-family: "Architects Daughter";
-  background-color: rgb(255, 115, 64);
   color: white;
 }
 
@@ -37,6 +36,7 @@
 #list li {
   border: 1px solid orangered;
   border-radius: 10px;
+  font-size: 20px;
   padding: 12px 10px;
   margin-top: 8px;
 }
@@ -62,11 +62,11 @@
   background-color: white;
   border-radius: 10px;
   width: 350px;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 99;
-  animation: fadeIn 0.3s ease-in-out;
+  position: fixed;
+  top: 50%;
+  left: 43%;
+  margin-top: -50px;
+  margin-left: -100px;
 }
 
 .atten {
@@ -75,7 +75,7 @@
   padding: 12px 0px;
   font-family: "Architects Daughter";
   font-weight: bold;
-  border: 1px solid orangered;
+  border: 0px solid orangered;
   border-bottom: none;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -134,4 +134,9 @@
   100% {
     opacity: 1;
   }
+}
+
+div.toast {
+  background-color: rgb(255, 108, 55);
+  font-family: "Architects Daughter";
 }
