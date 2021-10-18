@@ -57,6 +57,16 @@
   outline: none;
 }
 
+.editicon {
+  float: right;
+  padding-top: 1px;
+}
+
+.editicon:hover {
+  color: rgb(90, 90, 90);
+  cursor: pointer;
+}
+
 #deleAlert {
   border: 2px solid orangered;
   background-color: white;
@@ -64,9 +74,9 @@
   width: 350px;
   position: fixed;
   top: 50%;
-  left: 43%;
+  left: 50%;
   margin-top: -50px;
-  margin-left: -100px;
+  margin-left: -180px;
 }
 
 .atten {
@@ -139,4 +149,43 @@
 div.toast {
   background-color: rgb(255, 108, 55);
   font-family: "Architects Daughter";
+}
+
+#editbox {
+  border: 2px solid orangered;
+  background-color: white;
+  border-radius: 10px;
+  width: 450px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -220px;
+}
+
+#editfield {
+  width: 400px;
+  display: block;
+  margin: 20px auto 0px auto;
+  padding: 0px 10px;
+  font-family: "Architects Daughter";
+}
+
+#changebut {
+  background-color: transparent;
+  border: 1px solid orangered;
+  color: black;
+  border-radius: 10px;
+  font-family: "Architects Daughter";
+  font-size: 18px;
+  outline: none;
+  padding: 5px 12px;
+  margin: 20px 0px 20px 172px;
+}
+
+#changebut:hover {
+  color: white;
+  background-color: orangered;
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
 }
