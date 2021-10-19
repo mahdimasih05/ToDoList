@@ -13,8 +13,14 @@
 
 #main-input {
   font-family: "Architects Daughter";
-  transition: border-color 0.15s ease-in-out,
-    box-shadow orangered 0.15s ease-in-out;
+  padding-left: 5px;
+}
+
+#main-input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid orangered;
+  transition: 0.15s ease-in;
 }
 
 .btn {
@@ -147,7 +153,7 @@
 }
 
 div.toast {
-  background-color: rgb(255, 108, 55);
+  background-color: orangered;
   font-family: "Architects Daughter";
 }
 
@@ -169,6 +175,13 @@ div.toast {
   margin: 20px auto 0px auto;
   padding: 0px 10px;
   font-family: "Architects Daughter";
+}
+
+#editfield:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid orangered;
+  transition: 0.15s ease-in;
 }
 
 #changebut {

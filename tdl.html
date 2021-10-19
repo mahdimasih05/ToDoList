@@ -26,8 +26,8 @@
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
   </head>
   <body>
-    <div class="topheader"><p class="header">To Do List</p></div>
-    <div class="text-center col-md-6 my-5 mx-auto">
+    <div id="div1" class="topheader"><p class="header">To Do List</p></div>
+    <div id="div2" class="text-center col-md-6 my-5 mx-auto">
       <form>
         <div class="form-group">
           <input
@@ -38,7 +38,7 @@
           />
         </div>
       </form>
-      <button type="submit" class="btn" style="background-color: orangered;" onclick="subFunction()">Submit</button>
+      <button type="submit" id="subbut" class="btn" style="background-color: orangered;" onclick="subFunction()">Submit</button>
       <ul id="list"></ul>
     </div>
 
@@ -49,7 +49,6 @@
       <button id="no">No</button>
     </div>
 
-    </div>
 
     <div id="editbox" style="display: none;">
       <input type="text" id="editfield">
